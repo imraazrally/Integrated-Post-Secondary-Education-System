@@ -1,0 +1,73 @@
+body{
+	background-image:url("../img/home.jpeg");
+}
+
+
+.stateTable{
+	background-color: black;
+}
+
+#state{
+	color:black;
+	display: inline;
+	float: left;
+	width:70%;
+	font-size: 15;
+	top:0;
+}
+
+#inputCard{
+	background-color: white;
+	width: 20%;
+	overflow: hidden;
+	margin-bottom: 10%;
+	color:black;
+	border-radius: 10px;
+	display:inline;
+	float:left;
+	margin-left: 2%;
+	position: fixed;
+}
+
+#header{
+	background-color:white;
+	top:0;
+	left:0;
+	width: 100px;
+	height: 100%;
+	position: fixed;
+	display: inline;
+	float:left;
+}
+
+#results{
+	margin-top:20px;
+}
+
+#detailedResults{
+	margin-top: 130px;
+	height: 100%;
+	width: 100%;
+	display: none;
+}
+
+
+.card{
+	width:50%;
+	margin-left: 25%;
+	height:200px;
+	overflow: hidden;
+	height: auto;
+	margin-top: 10px;
+	border-radius: 10px;
+}
+
+#searchBox{
+	width:37%;
+	margin-left: 25%;
+	height: 40px;
+	border-radius: 5px;
+	margin-top: 30px;
+	color:black;
+	border:none;
+}

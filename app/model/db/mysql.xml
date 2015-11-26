@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<dbLoginConsts>
+	<url>mysql:host=localhost;dbname=edu_system;charset=utf8</url>
+	<username>root</username>
+	<password>1234</password>
+	<hostname>http://localhost/is2181/</hostname>
+</dbLoginConsts>
+
+<!--
+	<?xml version="1.0" encoding="ISO-8859-1"?>
+<dbLoginConsts>
+	<url>mysql:host=sql2.njit.edu;dbname=ir29;charset=utf8</url>
+	<username>ir29</username>
+	<password>I9FVzj7xM</password>
+</dbLoginConsts>
+-->

@@ -1,0 +1,73 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> 
+		<script src="js/main.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" type="text/css" href="css/w3.css">
+	</head>
+
+
+	<body onload="getListOfInstitutes(); displaySelectStates()" class="w3-dark-grey">
+	<!--results && detailedResults-->				
+
+		<div id="inputCard">
+			<div class="w3-form">
+
+				<h2> Filter Criteria </h2>
+
+				<div class="w3-input-group">      
+				    <label class="w3-label">Institute Name</label>
+				    <input class="w3-input" type="text" id="name">
+				</div>
+				
+				<div class="w3-input-group"> 
+						<label class="w3-label">Select State</label>
+						<div id="selectStates"></div>
+				</div>
+
+				<br><hr>
+				
+				<div class="w3-input-group">
+					<label class="w3-label">Hospital</label>
+					<input class="w3-radio" type="radio" name="hospital" id="hospital" value="">All</input>
+					<br><input class="w3-radio" type="radio" name="hospital" id="hospital" value="1">Yes</input>
+					<br><input class="w3-radio" type="radio" name="hospital" id="hospital" value="2">No</input>
+				</div>
+				<hr>
+
+				<div class="w3-input-group">
+					<label class="w3-label">Offers Medical Degree</label>
+					<input class="w3-radio" type="radio" name="medical" id='medical' value="">All</input>
+					<br><input class="w3-radio" type="radio" name="medical" id='medical' value="1">Yes</input>
+					<br><input class="w3-radio" type="radio" name="medical" id='medical' value="2">No</input>
+				</div>
+
+				<hr>
+
+				<div class="w3-input-group">
+					<label class="w3-label">Level</label>
+					<input class="w3-input" id="level" type="text"></input>
+				</div>
+
+				<br><br><button onclick="filter()" class="w3-btn w3-red"> Filter </button>
+				<button onclick="displayStatesRankedByPublicInstituteCount()" class="w3-btn w3-red"> State Rank </button>
+			</div>
+		</div>
+
+		
+
+		<div id="detailedResults">
+
+				<div id="details">
+				</div>
+				
+		</div>
+
+		<div id="results"></div>
+
+	</body>
+
+
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</html>
