@@ -15,7 +15,6 @@
 	/*
 		We are building a SQL QUERY STRING dynamically based on the GET Paremeters. 
 		Available Filters By: name, state, level, hospital, medical
-
 		Note: The GET request may contain any combination of the above filters. 
 	*/
 
@@ -58,13 +57,13 @@
 
 	
 	$listOfNamesAndIdsFiltered=$filterHandler->getFilteredIdsAndNames(
-													$BASE_QUERY, 
-													$name, 
-													$state, 
-													$level, 
-													$hospital, 
-													$medical
-												);
+										$BASE_QUERY, 
+										$name, 
+										$state, 
+										$level, 
+										$hospital, 
+										$medical
+									);
 
 	foreach($listOfNamesAndIdsFiltered as $institute){
 		$instituteInfo=$instituteHandler->getInstituteSummaryById($institute->unitid);
