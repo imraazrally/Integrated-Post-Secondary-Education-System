@@ -15,11 +15,7 @@
 	//Displaying the clickable links for each institute by passing the ID as a GET parameter
 	foreach($listOfInstituteNames as $institute){
 		$instituteInfo=$instituteHandler->getInstituteSummaryById($institute->unitid);
-
-		/*
-			Displaying a summary of each Institute.
-		*/
-
+		//Displaying a summary of each Institute.
 		$instituteInfo=$instituteHandler->getInstituteSummaryById($institute->unitid);
 		InstituteSummaryCardTemplate::printTemplate($institute->instnm, $instituteInfo);	
 	}
